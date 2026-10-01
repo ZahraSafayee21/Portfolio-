@@ -1,0 +1,944 @@
+/* =========================================================
+   RESET
+========================================================= */
+html {
+    scroll-behavior: smooth;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* =========================================================
+   BODY - LIGHT MODE
+========================================================= */
+
+body {
+    
+    background-color:#E6D8C8 ;
+    overflow-x: auto;
+    overflow-y: hidden;
+    
+}
+
+
+/* =========================================================
+   HEADER - LIGHT MODE
+========================================================= */
+
+header {
+    position: fixed;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+
+    box-sizing: border-box;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 20px 50px;
+
+    border-bottom: 1px solid rgba(111, 29, 42, 0.2);
+
+    z-index: 1000;
+}
+
+
+/* =========================================================
+   NAME
+========================================================= */
+
+.name {
+    font-family: "Playfair Display", serif;
+
+    font-size: 22px;
+
+    letter-spacing: 1px;
+}
+
+.part1 {
+    color: #b8948c;
+}
+
+.part2 {
+    color: #6b1e2b;
+}
+
+
+/* =========================================================
+   NAVIGATION - LIGHT MODE
+========================================================= */
+
+nav {
+    display: flex;
+    gap: 30px;
+}
+
+nav a {
+    position: relative;
+
+    text-decoration: none;
+
+    font-family: "Cormorant Garamond", serif;
+
+    font-weight: 500;
+
+    color: rgba(0, 0, 0, 0.813);
+
+    font-size: 16px;
+
+    letter-spacing: 1.5px;
+
+    padding: 4px 0;
+
+    transition:
+        color 0.3s ease,
+        transform 0.3s ease;
+}
+
+
+/* ظریف‌تر از underline معمولی */
+
+nav a::after {
+    content: "";
+
+    position: absolute;
+
+    left: 0;
+    bottom: -4px;
+
+    width: 0;
+    height: 1px;
+
+    background-color: #6f1d2a;
+
+    transition: width 0.3s ease;
+}
+
+nav a:hover {
+    color: #6f1d2a;
+
+    transform: translateY(-1px);
+}
+
+nav a:hover::after {
+    width: 100%;
+}
+
+
+nav button {
+    background: none;
+
+    border: none;
+
+    font-size: 18px;
+
+    cursor: pointer;
+
+    color: #7d2130;
+
+    transition: transform 0.3s ease;
+}
+
+nav button:hover {
+    transform: rotate(20deg);
+}
+
+
+/* =========================================================
+   HOME
+========================================================= */
+
+#home {
+    width: 100%;
+    
+    min-height: 100vh;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    padding: 120px 50px 50px;
+
+    gap: 65px;
+
+    overflow: hidden;
+}
+
+
+/* =========================================================
+   LEFT SIDE
+========================================================= */
+
+.hero-content {
+    width: 50%;
+
+    max-width: 570px;
+
+    position: relative;
+
+    z-index: 3;
+}
+
+
+/* Small title */
+
+.small-title {
+    position: relative;
+
+    padding-left: 35px;
+
+    margin-bottom: 25px;
+
+    font-size: 10px;
+
+    letter-spacing: 3px;
+
+    line-height: 1.8;
+
+    color: #806d64;
+}
+
+.small-title::before {
+    content: "";
+
+    position: absolute;
+
+    left: 0;
+    top: 9px;
+
+    width: 22px;
+    height: 1px;
+
+    background-color: #806d64;
+
+    transition: width 0.3s ease;
+}
+
+.small-title:hover::before {
+    width: 30px;
+}
+
+
+/* =========================================================
+   MAIN TITLE
+========================================================= */
+
+.hero-content h1 {
+    margin: 0 0 20px;
+
+    font-family: "Playfair Display", serif;
+
+    font-size: clamp(55px, 5vw, 68px);
+
+    font-weight: 400;
+
+    line-height: 0.95;
+
+    letter-spacing: -1.5px;
+
+    color: #211918;
+}
+
+
+/* =========================================================
+   SUBTITLE
+========================================================= */
+
+.hero-content h2 {
+    margin-bottom: 20px;
+
+    font-size: 13px;
+
+    font-weight: 400;
+
+    letter-spacing: 3px;
+
+    color: #5c241c;
+}
+
+
+/* =========================================================
+   DESCRIPTION
+========================================================= */
+
+.description {
+    max-width: 430px;
+
+    font-size: 13px;
+
+    line-height: 1.8;
+
+    color: #756b67;
+}
+
+
+/* =========================================================
+   BUTTON
+========================================================= */
+
+.hero-btn {
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 8px;
+
+    margin-top: 25px;
+
+    padding: 12px 22px;
+
+    border: 1px solid #9b706b;
+
+    text-decoration: none;
+
+    font-size: 10px;
+
+    letter-spacing: 2px;
+
+    color: #805450;
+
+    background: transparent;
+
+    position: relative;
+
+    overflow: hidden;
+
+    transition:
+        color 0.35s ease,
+        border-color 0.35s ease,
+        transform 0.3s ease;
+}
+
+
+/* Fill animation */
+
+.hero-btn::before {
+    content: "";
+
+    position: absolute;
+
+    inset: 0;
+
+    background-color: #805450;
+
+    transform: translateX(-101%);
+
+    transition: transform 0.35s ease;
+
+    z-index: -1;
+}
+
+
+.hero-btn span {
+    margin-left: 8px;
+
+    transition: transform 0.3s ease;
+}
+
+
+.hero-btn:hover {
+    background-color: transparent;
+
+    color: #E8DBCA;
+
+    border-color: #805450;
+
+    transform: translateY(-2px);
+}
+
+.hero-btn:hover::before {
+    transform: translateX(0);
+}
+
+.hero-btn:hover span {
+    transform: translateX(4px);
+}
+
+
+/* =========================================================
+   SMALL EDITORIAL DETAIL
+========================================================= */
+
+.hero-content::before {
+    content: "01";
+
+    position: absolute;
+
+    left: -5px;
+
+    bottom: -70px;
+
+    font-family: "Cormorant Garamond", serif;
+
+    font-size: 11px;
+
+    letter-spacing: 3px;
+
+    color: rgba(111, 29, 42, 0.45);
+}
+
+
+/* =========================================================
+   RIGHT SIDE - PHOTO
+========================================================= */
+
+.hero-image img {
+    display: block;
+    width: 97%;
+    max-width: 690px;
+    height: auto;
+    object-fit: contain;
+    background: transparent;
+
+    position: relative;
+    z-index: 2;
+
+    /* قوس عمیق‌تر در سمت راست */
+    clip-path: ellipse(60% 58% at 25.1% 50%);
+    transform: translateX(50px);
+    transition:
+        transform 0.5s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+/* حرکت خیلی ظریف عکس */
+
+.hero-image:hover img {
+    transform: translateY(-1px);
+}
+
+
+
+
+
+/* Header */
+
+body.dark-mode header {
+    border-bottom: none;
+}
+
+
+/* Body */
+
+body.dark-mode {
+    background-color: #211B1D;
+}
+
+
+/* Name */
+
+body.dark-mode .name {
+    color: #D2B3AC;
+}
+
+
+/* Navigation */
+
+body.dark-mode nav a {
+    color: #E5D7D3;
+}
+
+body.dark-mode nav a:hover {
+    color: #FFFFFF;
+}
+
+
+/* Theme button */
+
+body.dark-mode nav button {
+    color: #E5D7D3;
+}
+
+
+/* Name parts */
+
+body.dark-mode .name span:first-child {
+    color: #e4c6bf;
+}
+
+body.dark-mode .name span:last-child {
+    color: #d56b7a;
+}
+
+
+/* Dark background image */
+
+body.dark-mode::before {
+    content: "";
+
+    position: fixed;
+
+    inset: 0;
+
+    background-image: url("images/background portfolio.PNG");
+
+    background-size: cover;
+
+    background-position: center;
+
+    opacity: 0.15;
+
+    z-index: -1;
+}
+
+
+/* =========================================================
+   DARK MODE - HOME TEXT
+========================================================= */
+
+body.dark-mode .hero-content h1 {
+    color: #F5E9E5;
+}
+
+body.dark-mode .hero-content h2 {
+    color: #DFA9A5;
+}
+
+body.dark-mode .small-title {
+    color: #BFA9A5;
+}
+
+body.dark-mode .small-title::before {
+    background-color: #BFA9A5;
+}
+
+body.dark-mode .description {
+    color: #CFC1BE;
+}
+
+body.dark-mode .hero-btn {
+    color: #DFA9A5;
+
+    border-color: #DFA9A5;
+}
+
+body.dark-mode .hero-btn:hover {
+    background-color: #DFA9A5;
+
+    color: #211B1D;
+}
+
+
+/* =========================================================
+   HIDE PERSONAL PHOTO IN DARK MODE
+========================================================= */
+
+body.dark-mode .hero-image {
+    display: none;
+}
+
+
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+
+
+/* =========================================================
+   ABOUT SECTION
+========================================================= */
+
+
+
+.page-slider {
+    display: flex;
+    flex-direction: row;
+
+    width: max-content;
+    height: 100vh;
+
+    transition: transform 1.5s cubic-bezier(0.77, 0, 0.175, 1);
+}
+
+.page-slider > section {
+    flex: 0 0 100vw;
+
+    width: 100vw;
+    height: 100vh;
+    min-height: 100vh;
+}
+ 
+.about-section {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    min-height: 100vh;
+
+    padding: 120px 70px 50px;
+
+    display: grid;
+    grid-template-columns: 42% 58%;
+    grid-template-rows: 1fr auto;
+
+    background-color: #E6D8C8;
+
+    overflow: hidden;
+}
+
+
+/* =========================================================
+   DECORATIVE BRANCH
+========================================================= */
+
+.about-decoration {
+    position: absolute;
+
+    right: 30px;
+    top: 120px;
+
+    width: 240px;
+    height: 420px;
+
+    pointer-events: none;
+    z-index: 0;
+
+    opacity: 0.75;
+}
+
+.about-decoration svg {
+    width: 100%;
+    height: 100%;
+}
+
+
+/* =========================================================
+   LEFT SIDE
+========================================================= */
+
+.about-left {
+    position: relative;
+    z-index: 2;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    padding-left: 30px;
+}
+
+.about-number {
+    position: absolute;
+
+    top: 20px;
+    left: 0;
+
+    font-family: "Cormorant Garamond", serif;
+    font-size: 11px;
+    letter-spacing: 3px;
+
+    color: rgba(111, 29, 42, 0.45);
+}
+
+.about-label {
+    position: relative;
+
+    padding-left: 35px;
+    margin-bottom: 25px;
+
+    font-size: 10px;
+    letter-spacing: 3px;
+    line-height: 1.8;
+
+    color: #806D64;
+}
+
+.about-label::before {
+    content: "";
+
+    position: absolute;
+    left: 0;
+    top: 9px;
+
+    width: 22px;
+    height: 1px;
+
+    background-color: #806D64;
+
+    transition: width 0.3s ease;
+}
+
+.about-label:hover::before {
+    width: 30px;
+}
+
+
+.about-left h2 {
+    margin: 0;
+
+    font-family: "Playfair Display", serif;
+
+    font-size: clamp(55px, 6vw, 82px);
+    font-weight: 400;
+
+    line-height: 0.9;
+    letter-spacing: -2px;
+
+    color: #211918;
+}
+
+.about-left h2 span {
+    color: #6F1D2A;
+}
+
+
+/* =========================================================
+   RIGHT SIDE
+========================================================= */
+
+.about-right {
+    position: relative;
+    z-index: 2;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    max-width: 570px;
+
+    padding-left: 40px;
+}
+
+
+.about-small-title {
+    margin-bottom: 18px;
+
+    font-size: 10px;
+    letter-spacing: 3px;
+
+    color: #806D64;
+}
+
+
+.about-right h3 {
+    margin: 0 0 20px;
+
+    font-family: "Playfair Display", serif;
+
+    font-size: 38px;
+    font-weight: 400;
+
+    color: #5C241C;
+}
+
+
+.about-description {
+    max-width: 430px;
+
+    margin-bottom: 42px;
+
+    font-size: 13px;
+    line-height: 1.9;
+
+    color: #756B67;
+}
+
+
+/* =========================================================
+   WHAT I LOVE
+========================================================= */
+
+.about-love {
+    position: relative;
+}
+
+.about-love > .about-small-title {
+    margin-bottom: 20px;
+}
+
+
+.love-grid {
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    column-gap: 45px;
+    row-gap: 25px;
+
+    max-width: 500px;
+}
+
+
+.love-item {
+    position: relative;
+
+    padding-left: 30px;
+
+    border-left: 1px solid rgba(111, 29, 42, 0.2);
+}
+
+
+.love-item > span {
+    position: absolute;
+
+    left: 0;
+    top: 2px;
+
+    transform: translateX(-50%);
+
+    font-family: "Cormorant Garamond", serif;
+
+    font-size: 9px;
+    letter-spacing: 1px;
+
+    color: #9B706B;
+
+    background-color: #E6D8C8;
+}
+
+
+.love-item h4 {
+    margin-bottom: 6px;
+
+    font-size: 11px;
+    font-weight: 500;
+
+    letter-spacing: 2px;
+
+    color: #5C241C;
+}
+
+
+.love-item p {
+    font-size: 11px;
+    line-height: 1.6;
+
+    color: #806D64;
+}
+
+
+/* =========================================================
+   BOTTOM SKILLS
+========================================================= */
+
+.about-skills {
+    grid-column: 1 / -1;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 50px;
+
+    margin-top: 25px;
+
+    padding-top: 18px;
+
+    border-top: 1px solid rgba(111, 29, 42, 0.18);
+
+    position: relative;
+    z-index: 3;
+}
+
+
+.skill {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+
+.skill span {
+    font-family: "Cormorant Garamond", serif;
+
+    font-size: 10px;
+    letter-spacing: 2px;
+
+    color: #9B706B;
+}
+
+
+.skill p {
+    font-size: 10px;
+    letter-spacing: 2.5px;
+
+    color: #6F1D2A;
+}
+
+
+/* =========================================================
+   ABOUT - DARK MODE
+========================================================= */
+
+body.dark-mode .about-section {
+    background-color: #211B1D;
+}
+
+body.dark-mode .about-number {
+    color: rgba(213, 107, 122, 0.55);
+}
+
+body.dark-mode .about-label,
+body.dark-mode .about-small-title {
+    color: #BFA9A5;
+}
+
+body.dark-mode .about-label::before {
+    background-color: #BFA9A5;
+}
+
+body.dark-mode .about-left h2 {
+    color: #F5E9E5;
+}
+
+body.dark-mode .about-left h2 span {
+    color: #D56B7A;
+}
+
+body.dark-mode .about-right h3 {
+    color: #DFA9A5;
+}
+
+body.dark-mode .about-description {
+    color: #CFC1BE;
+}
+
+body.dark-mode .love-item {
+    border-left-color: rgba(213, 107, 122, 0.25);
+}
+
+body.dark-mode .love-item > span {
+    color: #DFA9A5;
+    background-color: #211B1D;
+}
+
+body.dark-mode .love-item h4 {
+    color: #DFA9A5;
+}
+
+body.dark-mode .love-item p {
+    color: #BFA9A5;
+}
+
+body.dark-mode .about-skills {
+    border-top-color: rgba(213, 107, 122, 0.2);
+}
+
+body.dark-mode .skill span {
+    color: #DFA9A5;
+}
+
+body.dark-mode .skill p {
+    color: #D56B7A;
+}
+
+body.dark-mode .about-decoration {
+    opacity: 0.5;
+}
+
+
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+
+
+
+
+
+
+
