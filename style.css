@@ -936,7 +936,363 @@ body.dark-mode .about-decoration {
    RESPONSIVE
 ========================================================= */
 
+/* =========================================================
+   PROJECTS SECTION
+========================================================= */
 
+.projects-section {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    min-height: 100vh;
+
+    padding: 95px 70px 20px;
+
+    background-color: #E6D8C8;
+
+    overflow: hidden;
+
+    display: grid;
+    grid-template-rows: 80px 1fr 1fr;
+    row-gap: 5px;
+}
+
+
+/* =========================================================
+   PROJECTS HEADER
+========================================================= */
+
+.projects-header {
+    position: relative;
+    margin: 0;
+}
+
+.projects-label {
+    display: inline-block;
+    position: relative;
+
+    margin-bottom: 4px;
+    padding-left: 35px;
+
+    font-size: 9px;
+    letter-spacing: 3px;
+
+    color: #806D64;
+}
+
+.projects-label::before {
+    content: "";
+
+    position: absolute;
+    left: 0;
+    top: 50%;
+
+    width: 22px;
+    height: 1px;
+
+    background-color: #806D64;
+}
+
+.projects-header h2 {
+    margin: 0;
+
+    font-family: "Playfair Display", serif;
+    font-size: 52px;
+    font-weight: 400;
+
+    line-height: 0.85;
+    letter-spacing: -2px;
+
+    color: #6F1D2A;
+}
+
+.projects-intro {
+    position: absolute;
+
+    right: 35px;
+    top: 5px;
+
+    max-width: 260px;
+
+    font-family: "Cormorant Garamond", serif;
+    font-size: 13px;
+    line-height: 1.35;
+    font-style: italic;
+
+    color: #806D64;
+}
+
+
+/* =========================================================
+   PROJECT COMMON
+========================================================= */
+
+.project {
+    position: relative;
+
+    width: 100%;
+    height: 100%;
+    min-height: 0;
+
+    display: grid;
+    align-items: center;
+
+    gap: 10px;
+}
+
+
+/* =========================================================
+   PROJECT 01
+   TEXT LEFT / IMAGE RIGHT
+========================================================= */
+
+.project-one {
+    grid-template-columns: 43% 57%;
+}
+
+.project-one .project-info {
+    grid-column: 1;
+    grid-row: 1;
+
+    padding-left: 30px;
+}
+
+.project-one .project-image {
+    grid-column: 2;
+    grid-row: 1;
+}
+
+
+/* =========================================================
+   PROJECT 02
+   IMAGE LEFT / TEXT RIGHT
+========================================================= */
+
+.project-two {
+    grid-template-columns: 57% 43%;
+
+    border-top: 1px solid rgba(111, 29, 42, 0.18);
+}
+
+.project-two .project-image {
+    grid-column: 1;
+    grid-row: 1;
+}
+
+.project-two .project-info {
+    grid-column: 2;
+    grid-row: 1;
+
+    padding-left: 15px;
+}
+
+
+/* =========================================================
+   PROJECT IMAGE
+========================================================= */
+
+.project-image {
+    position: relative;
+
+    width: 50%;
+    max-width: 290px;
+
+    justify-self: center;
+
+    padding: 0;
+
+    background: transparent;
+    border: none;
+    box-shadow: none;
+}
+
+.project-image::before {
+    display: none;
+}
+
+.project-image img {
+    display: block;
+
+    width: 100%;
+    height: auto;
+
+    object-fit: contain;
+
+    transition: transform 0.4s ease;
+}
+
+.project-image:hover img {
+    transform: scale(1.02);
+}
+
+
+/* =========================================================
+   PROJECT NUMBER
+========================================================= */
+
+.project-number {
+    display: block;
+
+    margin-bottom: 6px;
+
+    font-size: 8px;
+    letter-spacing: 3px;
+
+    color: #9B706B;
+}
+
+
+/* =========================================================
+   PROJECT TITLE
+========================================================= */
+
+.project-info h3 {
+    margin: 0 0 7px;
+
+    font-family: "Playfair Display", serif;
+    font-size: 28px;
+    font-weight: 400;
+
+    line-height: 1;
+
+    color: #6F1D2A;
+}
+
+
+/* =========================================================
+   PROJECT DESCRIPTION
+========================================================= */
+
+.project-description {
+    max-width: 280px;
+
+    margin-bottom: 10px;
+
+    font-size: 10px;
+    line-height: 1.5;
+
+    color: #756B67;
+}
+
+
+/* =========================================================
+   PROJECT LINK
+========================================================= */
+
+.project-link {
+    display: inline-flex;
+    align-items: center;
+
+    gap: 7px;
+
+    position: relative;
+
+    padding-bottom: 3px;
+
+    text-decoration: none;
+
+    font-size: 8px;
+    letter-spacing: 2.5px;
+
+    color: #6F1D2A;
+
+    transition: color 0.3s ease;
+}
+
+.project-link::after {
+    content: "";
+
+    position: absolute;
+
+    left: 0;
+    bottom: 0;
+
+    width: 50px;
+    height: 1px;
+
+    background-color: #9B706B;
+
+    transition: width 0.3s ease;
+}
+
+.project-link span {
+    transition: transform 0.3s ease;
+}
+
+.project-link:hover {
+    color: #9B706B;
+}
+
+.project-link:hover::after {
+    width: 100%;
+}
+
+.project-link:hover span {
+    transform: translateX(4px);
+}
+/* =========================================================
+   PROJECT IMAGE POSITION
+========================================================= */
+
+/* Glow Shop — کمی راست‌تر و بالاتر */
+.project-one .project-image {
+    transform: translate(35px, -18px);
+}
+
+
+/* Food Shop — کمی چپ‌تر و پایین‌تر */
+.project-two .project-image {
+    transform: translate(-35px, 18px);
+}
+
+
+/* =========================================================
+   DARK MODE
+========================================================= */
+
+body.dark-mode .projects-section {
+    background-color: #211B1D;
+}
+
+body.dark-mode .projects-label {
+    color: #BFA9A5;
+}
+
+body.dark-mode .projects-label::before {
+    background-color: #BFA9A5;
+}
+
+body.dark-mode .projects-header h2 {
+    color: #D56B7A;
+}
+
+body.dark-mode .projects-intro {
+    color: #BFA9A5;
+}
+
+body.dark-mode .project-number {
+    color: #DFA9A5;
+}
+
+body.dark-mode .project-info h3 {
+    color: #DFA9A5;
+}
+
+body.dark-mode .project-description {
+    color: #CFC1BE;
+}
+
+body.dark-mode .project-link {
+    color: #DFA9A5;
+}
+
+body.dark-mode .project-link::after {
+    background-color: #D56B7A;
+}
+
+body.dark-mode .project-two {
+    border-top-color: rgba(213, 107, 122, 0.2);
+}
 
 
 
