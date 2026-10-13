@@ -22,12 +22,16 @@
         </div>
 
         <!-- <navigation> -->
+            
             <nav>
+                <div class="nav-links">
                 <a href="#home">HOME</a>
                 <a href="#about">ABOUT</a>
                 <a href="#projects">PROJECTS</a>
                 <a href="#contact">CONTACT</a>
+                </div>
                 <button id="theme-toggle">☀</button>
+                <button class="menu-toggle">☰</button>
             </nav>
     </header>
 
@@ -57,7 +61,7 @@
             that feel unique, modern and alive.
         </p>
 
-        <a href="#work" class="hero-btn">
+        <a href="#projects" class="hero-btn">
             EXPLORE MY WORK <span>→</span>
         </a>
 
@@ -313,44 +317,214 @@
 
 </section>
     
+    <!-- CONTACT SECTION: add this after the Projects section -->
+<section id="contact" class="contact-section">
+
+    <div class="contact-main">
+
+        
+        <div class="contact-intro">
+
+            <div class="contact-eyebrow">
+                <span class="eyebrow-line"></span>
+                
+            </div>
+
+            <h2>
+                LET’S CREATE
+                <br>
+                SOMETHING
+                <br>
+                BEAUTIFUL.
+            </h2>
+
+            <p class="contact-description">
+                Have an idea, a project, or just want to say hello?
+                I’d love to hear from you. Feel free to reach out
+                — I’m always excited to connect.
+            </p>
+
+            <div class="contact-details">
+
+                <div class="contact-detail">
+                    <span class="contact-icon" aria-hidden="true"></span>
+
+                    <div>
+                        <span class="detail-label">EMAIL ME AT</span>
+                       
+                        <a href="mailto:YOUR_EMAIL@example.com">
+                            zahrasafayi19@gmail.com
+                            <span aria-hidden="true">↗</span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="contact-detail">
+                    <span class="contact-icon" aria-hidden="true"></span>
+                       
+
+                    <div>
+                        <span class="detail-label">LET’S CONNECT</span>
+                        <p>Open to creative opportunities</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+       
+        <div class="contact-botanical" aria-hidden="true">
+
+            <svg
+                class="botanical-svg"
+                viewBox="0 0 240 620"
+                xmlns="http://www.w3.org/2000/svg"
+            >
+               
+                
+                <path
+                    class="botanical-stem"
+                    d="M74 592
+                       C81 520 132 476 142 414
+                       C152 354 116 310 120 254
+                       C123 193 153 128 187 43"
+                />
+
+               
+                <path
+                    class="botanical-stem botanical-stem-light"
+                    d="M154 584
+                       C179 533 207 498 204 455
+                       C202 412 175 379 154 350"
+                />
+
+               
+                <g class="botanical-leaves">
+                    <path d="M105 484 C61 482 51 456 53 437 C80 442 103 459 105 484Z" />
+                    <path d="M110 463 C139 444 151 422 145 401 C124 416 111 438 110 463Z" />
+
+                    <path d="M132 408 C91 407 77 385 79 367 C105 369 128 387 132 408Z" />
+                    <path d="M143 378 C169 359 180 336 174 317 C153 332 141 355 143 378Z" />
+
+                    <path d="M120 320 C83 316 68 296 73 279 C98 284 116 300 120 320Z" />
+                    <path d="M126 282 C151 264 161 243 154 225 C135 240 125 261 126 282Z" />
+
+                    <path d="M141 220 C106 218 93 199 97 183 C120 187 137 201 141 220Z" />
+                    <path d="M154 177 C177 160 186 141 179 125 C162 139 153 158 154 177Z" />
+
+                    <path d="M173 120 C145 116 136 100 141 87 C160 92 172 104 173 120Z" />
+                </g>
+
+                
+                <circle class="botanical-circle" cx="191" cy="475" r="20" />
+            </svg>
+
+        </div>
+
+      
+         
+        <div class="contact-form-area">
+   
+        
+            <p class="form-heading">Send me a message</p>
+
+            <form
+                class="contact-form"
+                action="mailto:YOUR_EMAIL@example.com"
+                method="post"
+                enctype="text/plain"
+            >
+
+                <div class="form-row">
+
+                    <div class="form-field">
+                        <label for="contact-name">Your Name *</label>
+                        <input
+                            type="text"
+                            id="contact-name"
+                            name="Name"
+                            placeholder="Your name"
+                            autocomplete="name"
+                            required
+                        >
+                    </div>
+
+                    <div class="form-field">
+                        <label for="contact-email">Your Email *</label>
+                        <input
+                            type="email"
+                            id="contact-email"
+                            name="Email"
+                            placeholder="Your email"
+                            autocomplete="email"
+                            required
+                        >
+                    </div>
+
+                </div>
+
+                <div class="form-field">
+                    <label for="contact-subject">Subject</label>
+                    <select id="contact-subject" name="Subject">
+                        <option value="" selected disabled>
+                            Choose a subject
+                        </option>
+                        <option value="Web Design">Web Design</option>
+                        <option value="Front-end Development">
+                            Front-end Development
+                        </option>
+                        <option value="Collaboration">Collaboration</option>
+                        <option value="Other">Other</option>
+                    </select>
+                </div>
+
+                <div class="form-field message-field">
+                    <label for="contact-message">Your Message *</label>
+                    <textarea
+                        id="contact-message"
+                        name="Message"
+                        rows="4"
+                        placeholder="Tell me about your idea..."
+                        required
+                    ></textarea>
+                </div>
+
+                <button type="submit" class="contact-submit">
+                    <span>SEND MESSAGE</span>
+                    <span class="submit-arrow" aria-hidden="true">⟶</span>
+                </button>
+
+            </form>
+
+        </div>
+
+        
+        
+
+    </div>
+
+    
+    <footer class="contact-footer">
+
+        <div class="contact-socials">
+            
+            <a href="#" target="_blank" rel="noopener noreferrer">INSTAGRAM</a>
+            <span>·</span>
+            <a href="#" target="_blank" rel="noopener noreferrer">GITHUB</a>
+            <span>·</span>
+            <a href="#" target="_blank" rel="noopener noreferrer">LINKEDIN</a>
+        </div>
+
+        <p>© 2026 ZAHRA SAFAYEE</p>
+
+    </footer>
+
+</section>
+    
+    
    </main>
     <script src="script.js"></script>
    </body>
     
 
- 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <!-- <script src="script.js"></script> -->
-
-</html>
+ </html>
