@@ -2755,7 +2755,7 @@ nav .menu-toggle {
     }
     .contact-socials {
         left: auto !important;
-        right: 20px !important;
+        right: 5px !important;
         transform: none !important;
         margin-left: 0 !important;
         justify-content: flex-end !important;
