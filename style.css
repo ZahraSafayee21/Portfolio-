@@ -2517,6 +2517,7 @@ nav .menu-toggle {
         grid-template-rows: auto 1fr 1fr;
         row-gap: 18px;
         overflow: hidden;
+        
     }
 
     /* Header */
@@ -2571,7 +2572,7 @@ nav .menu-toggle {
     .projects-section .project-one {
         display: flex;
         flex-direction: column;
-        margin-top: -22px;
+        margin-top: -50px;
     }
 
     .projects-section .project-one .project-image {
@@ -2592,7 +2593,7 @@ nav .menu-toggle {
         flex-direction: column;
         border-top: 1px solid rgba(111, 29, 42, 0.18);
         padding-top: 14px;
-        margin-top: -20px;
+        margin-top: -50px;
     }
 
     .projects-section .project-two .project-image {
@@ -2724,7 +2725,7 @@ nav .menu-toggle {
     }
     
 .contact-form-area {
-    margin-top: 25px !important;
+    margin-top: 23px !important;
 
     width: calc(100% - 24px) !important;
     max-width: 100% !important;
@@ -2739,21 +2740,38 @@ nav .menu-toggle {
     top: auto !important;
 }
     .contact-form-area button {
-        width: 389px !important;
-        height: 0px !important;
+        width: 100%px !important;
+        height: 42px !important;
         padding: 0px 0px !important;
         border-radius: 20px;
         margin-top: 5px;
     }
-    .contact-footer {
+    .contact-section {
+    position: relative !important;
+    min-height: 100svh !important;
+    box-sizing: border-box !important;
+    padding-bottom: 35px !important;
+}
+
+.contact-footer {
+    position: absolute !important;
+    bottom: 0 !important;
+    left: 0 !important;
+    width: 100% !important;
+    margin: 0 !important;
+    transform: none !important;
+    box-sizing: border-box !important;
+    z-index: 5;
+}
+    /* .contact-footer {
         position: absolute !important;
-        bottom: 0 !important;
+        bottom: 0;
         left: 0 !important;
         width: 100% !important;
         margin-top: 0 !important;
         transform: none !important;
         box-sizing: border-box;
-    }
+    } */
     .contact-socials {
         left: auto !important;
         right: 5px !important;
