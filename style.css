@@ -2020,10 +2020,11 @@ body.dark-mode .contact-side-label {
 
     header {
         padding: 18px 20px;
+        height: 47px ;
     }
 
     .name {
-        font-size: 1.8rem;
+        font-size: 18px;
     }
 
     nav {
@@ -2683,7 +2684,7 @@ nav .menu-toggle {
     .contact-intro h2 {
         font-size: 25px;
         line-height: 1;
-        margin-top: 85px;
+        margin-top: 65px;
         margin-right: -10px;
         margin-left: -10px;
         font-family: "Playfair Display", serif ;
@@ -2723,7 +2724,7 @@ nav .menu-toggle {
     }
     
 .contact-form-area {
-    margin-top: 40px !important;
+    margin-top: 25px !important;
 
     width: calc(100% - 24px) !important;
     max-width: 100% !important;
@@ -2738,8 +2739,8 @@ nav .menu-toggle {
     top: auto !important;
 }
     .contact-form-area button {
-        width: 375px !important;
-        height: 5px !important;
+        width: 389px !important;
+        height: 0px !important;
         padding: 0px 0px !important;
         border-radius: 20px;
         margin-top: 5px;
