@@ -2683,7 +2683,7 @@ nav .menu-toggle {
     .contact-intro h2 {
         font-size: 25px;
         line-height: 1;
-        margin-top: 90px;
+        margin-top: 85px;
         margin-right: -10px;
         margin-left: -10px;
         font-family: "Playfair Display", serif ;
@@ -2723,7 +2723,7 @@ nav .menu-toggle {
     }
     
 .contact-form-area {
-    margin-top: 30px !important;
+    margin-top: 40px !important;
 
     width: calc(100% - 24px) !important;
     max-width: 100% !important;
@@ -2738,11 +2738,11 @@ nav .menu-toggle {
     top: auto !important;
 }
     .contact-form-area button {
-        width: 430px !important;
-        height: 15px !important;
+        width: 375px !important;
+        height: 5px !important;
         padding: 0px 0px !important;
         border-radius: 20px;
-        margin-top: 10px;
+        margin-top: 5px;
     }
     .contact-footer {
         position: absolute !important;
