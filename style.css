@@ -2570,6 +2570,7 @@ nav .menu-toggle {
     .projects-section .project-one {
         display: flex;
         flex-direction: column;
+        margin-top: -22px;
     }
 
     .projects-section .project-one .project-image {
@@ -2590,6 +2591,7 @@ nav .menu-toggle {
         flex-direction: column;
         border-top: 1px solid rgba(111, 29, 42, 0.18);
         padding-top: 14px;
+        margin-top: -20px;
     }
 
     .projects-section .project-two .project-image {
@@ -2681,7 +2683,7 @@ nav .menu-toggle {
     .contact-intro h2 {
         font-size: 25px;
         line-height: 1;
-        margin-top: 115px;
+        margin-top: 90px;
         margin-right: -10px;
         margin-left: -10px;
         font-family: "Playfair Display", serif ;
@@ -2692,11 +2694,7 @@ nav .menu-toggle {
         max-width: 220px !important;
         width: 100% !important;
     }
-    /* .contact-description {
-        border-bottom: 1px solid rgba(111, 29, 42, 0.35);
-        padding-bottom: 12px;
-        margin-bottom: 16px !important;
-    } */
+    
     .contact-botanical {
         position: absolute !important;
         top: 80px !important;
@@ -2723,20 +2721,28 @@ nav .menu-toggle {
         width: 100% !important;
         height: 100% !important;
     }
-    .contact-form-area {
-        margin-top: 30px !important;
-        transform: none !important;
-        position: relative !important;
-        top: auto !important;
-        margin-right: -5px;
+    
+.contact-form-area {
+    margin-top: 30px !important;
 
-    }
+    width: calc(100% - 24px) !important;
+    max-width: 100% !important;
+
+    margin-left: 12px !important;
+    margin-right: 12px !important;
+
+    box-sizing: border-box !important;
+
+    transform: none !important;
+    position: relative !important;
+    top: auto !important;
+}
     .contact-form-area button {
         width: 430px !important;
         height: 15px !important;
         padding: 0px 0px !important;
         border-radius: 20px;
-        margin-top: 20px;
+        margin-top: 10px;
     }
     .contact-footer {
         position: absolute !important;
